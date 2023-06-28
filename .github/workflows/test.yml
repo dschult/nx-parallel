@@ -37,4 +37,4 @@ jobs:
           pip install -e . --no-deps
       - name: PyTest
         run: |
-          NETWORKX_GRAPH_CONVERT=nx_parallel pytest --pyargs networkx
+          NETWORKX_GRAPH_CONVERT=parallel pytest --pyargs networkx
