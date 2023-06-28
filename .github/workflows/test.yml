@@ -31,7 +31,7 @@ jobs:
           activate-environment: testing
       - name: Install dependencies
         run: |
-          conda install -c joblib conda-forge scipy pandas pytest-cov pytest-randomly
+          conda install -c conda-forge joblib scipy pandas pytest-cov pytest-randomly
             # matplotlib lxml pygraphviz pydot sympy  # Extra networkx deps we don't need yet
           pip install git+https://github.com/networkx/networkx.git@main --no-deps
           pip install -e . --no-deps
