@@ -3,7 +3,7 @@ name: Tests
 on:
   pull_request:
   push:
-    branches: [ main ]
+    branches: [ main gh_test_action ]
 
 jobs:
   test:
