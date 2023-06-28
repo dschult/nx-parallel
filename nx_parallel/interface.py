@@ -19,7 +19,7 @@ class Dispatcher:
     def convert_to_nx(obj, *, name=None):
         from .graph import ParallelGraph
 
-        if isinstance(obj, Graph):
+        if isinstance(obj, nx.Graph):
             obj = obj.to_networkx()
         return obj
 
